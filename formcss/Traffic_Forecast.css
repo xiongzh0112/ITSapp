@@ -1,0 +1,648 @@
+body {
+    overflow: hidden;
+}
+
+#previewMap {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.TF_Head {
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    height: 60px;
+    width: 800px;
+    z-index: 10;
+}
+
+.TFH_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 800px;
+}
+
+.TFH_1_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 60px;
+    background: linear-gradient(to right, transparent 20%, #053ba8 80%);
+}
+
+.TFH_1_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 60px;
+    background: linear-gradient(to left, transparent 20%, #053ba8 80%);
+}
+
+.TFH_1_3 {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    width: 800px;
+    height: 60px;
+    background: url(../picture/kuang.png) no-repeat;
+    background-size: 500px 50px;
+    opacity: 0.7;
+}
+
+.TFH_1_4 {
+    position: absolute;
+    top: 0;
+    left: 28%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.TF_Time {
+    position: absolute;
+    top: 70px;
+    left: 45.4%;
+    width: 180px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 4px #053ba8;
+    border-radius: 30px;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 10;
+}
+
+.TF_Time span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.backMainForm {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 35px;
+    width: 35px;
+    box-shadow: 0 0 5px #053ba8;
+    border: 1px solid #053ba8;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.BMF {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 26px;
+    width: 26px;
+    box-shadow: 0 0 3px #053ba8;
+    border: 1px solid #053ba8;
+    background-color: #053ba8;
+    border-radius: 5px;
+}
+
+.BMF1_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 26px;
+    width: 26px;
+    background: url(../picture/主界面.png) no-repeat;
+    background-size: 25px 25px;
+    background-position: 1px 1px;
+    border-radius: 5px;
+}
+
+.TF_LeftTopChart {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    height: 400px;
+    width: 620px;
+    border: 1px solid #053ba8;
+    border-radius: 3px;
+    z-index: 10;
+    display: none;
+}
+
+.TF_LeftBottomChart {
+    position: absolute;
+    top: 500px;
+    left: 15px;
+    height: 400px;
+    width: 620px;
+    border: 1px solid #053ba8;
+    border-radius: 3px;
+    z-index: 10;
+    display: none;
+}
+
+.TF_LTC_1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 420px;
+    width: 640px;
+}
+
+.TF_LBC_1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 420px;
+    width: 640px;
+}
+
+.TF_LTC_1_1,
+.TF_LBC_1_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 25px;
+    background-color: #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.TF_LTC_1_2,
+.TF_LBC_1_2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 25px;
+    background-color: #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.TF_LTC_1_3,
+.TF_LBC_1_3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 420px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.TF_LTC_1_4,
+.TF_LBC_1_4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 420px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.TF_LTC_1_5,
+.TF_LBC_1_5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 25px;
+    background-color: #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+#echartbox2 {
+    position: absolute;
+    z-index: 12;
+    left: 2.5px;
+    top: 2.5px;
+    width: 600px;
+    height: 380px;
+    border: 2px solid #053ba8;
+}
+
+#echartbox1 {
+    position: absolute;
+    z-index: 12;
+    left: 2.5px;
+    top: 2.5px;
+    width: 600px;
+    height: 380px;
+    border: 2px solid #053ba8;
+}
+
+.TF_LTC_1_6,
+.TF_LBC_1_6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 25px;
+    background-color: #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.TF_LTC_2,
+.TF_LBC_2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 390px;
+    width: 610px;
+    background-color: beige;
+    border-radius: 3px;
+}
+
+.TF_LeftTopChartBtn {
+    position: absolute;
+    top: 10px;
+    left: 85px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.TF_RightChartBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.TF_RTCB {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 29px;
+    width: 29px;
+    background: url(../picture/表格.png) no-repeat;
+    background-size: 29px 29px;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 3px;
+}
+
+.TF_LTCB {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 29px;
+    width: 29px;
+    background: url(../picture/表格.png) no-repeat;
+    background-size: 29px 29px;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 3px;
+}
+
+.TF_LeftBottomChartBtn {
+    position: absolute;
+    bottom: 10px;
+    left: 85px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.TF_LBCB {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    height: 29px;
+    width: 29px;
+    background: url(../picture/表格.png) no-repeat;
+    background-size: 29px 29px;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.TF_RightTable {
+    position: absolute;
+    bottom: 25px;
+    right: 15px;
+    height: 850px;
+    width: 360px;
+    border: 1px solid #053ba8;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #053ba8;
+    z-index: 10;
+}
+
+.TF_RT1 {
+    position: absolute;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 870px;
+    width: 380px;
+    border: 1px solid #053ba8;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TF_RT2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 840px;
+    width: 350px;
+    background-color: #053ba8;
+    opacity: 0.8;
+    border-radius: 3px;
+    overflow-y: scroll;
+}
+
+.TF_RT2 table {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 840px;
+    width: 350px;
+    text-align: center;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+.TF_RT2 thead {
+    background: #1EABE3;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 30px;
+    color: white;
+    width: 350px;
+    height: 33px;
+}
+
+.TF_RT2 tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.TF_RT2 td {
+    vertical-align: middle;
+    color: white;
+    border-bottom: 1px white solid;
+    font-size: 16px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 70px;
+}
+
+.TF_RT2 tbody tr:hover {
+    background-color: #1EABE3;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1EABE3;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.TF_RightBox {
+    position: absolute;
+    top: 215px;
+    right: 392px;
+    height: 300px;
+    width: 110px;
+    z-index: 10;
+}
+
+.TF_RB_1 {
+    position: absolute;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    height: 304px;
+    width: 5px;
+    border: 1px solid #053ba8;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #053ba8;
+    background-color: #053ba8;
+}
+
+.TF_RB_2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 290px;
+    width: 100px;
+    opacity: 0.8;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TF_RB_2_1 {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    height: 90px;
+    width: 100px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TF_RB_2_2 {
+    position: absolute;
+    top: 110px;
+    left: 5px;
+    height: 90px;
+    width: 100px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TF_RB_2_3 {
+    position: absolute;
+    top: 210px;
+    left: 5px;
+    height: 70px;
+    width: 100px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TF_RB_2_1_1,
+.TF_RB_2_2_1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 28px;
+    width: 80px;
+    background-color: #1eabe3;
+    border-radius: 30px;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.TF_RB_2_1_2,
+.TF_RB_2_2_2 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: #1eabe3;
+    color: white;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TF_RB_2_3_1 {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    width: 60px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
+    border-width: 0;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #000;
+    background-color: cyan;
+}
+
+.TF_RB_2_3_2 {
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    width: 60px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 5px;
+    border-width: 0;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #000;
+    background-color: cyan;
+}
+
+.TF_RB_2_3_1:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #1EABE3;
+}
+
+.TF_RB_2_3_1:active {
+    box-shadow: 0px 4px 8px 0px #000;
+}
+
+.TF_RB_2_3_2:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #1EABE3;
+}
+
+.TF_RB_2_3_2:active {
+    box-shadow: 0px 4px 8px 0px #000;
+}
+
+.TF_RightSwitch {
+    position: absolute;
+    top: 280px;
+    right: 5px;
+    height: 90px;
+    width: 70px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 5px;
+    z-index: 10;
+    display: none;
+}
+
+.TF_RS_1 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 80px;
+    width: 60px;
+    background-color: #053ba8;
+    border-radius: 5px;
+}
+
+.TF_RS_1_1 {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    height: 30px;
+    width: 50px;
+    background-color: #1eabe3;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.TF_RS_1_2 {
+    position: absolute;
+    top: 43px;
+    left: 5px;
+    height: 30px;
+    width: 50px;
+    background-color: #1eabe3;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    cursor: pointer;
+}

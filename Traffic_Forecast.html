@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic_Forecast</title>
+    <link rel="stylesheet" type="text/css" href="./formcss/Traffic_Forecast.css">
+    <link rel="stylesheet" type="text/css" href="myjs/jquery.ui.css">
+</head>
+
+<body>
+    <div id="previewMap"></div>
+    <div class="TF_Head">
+        <div class="TFH_1">
+            <div class="TFH_1_1"></div>
+            <div class="TFH_1_2"></div>
+            <div class="TFH_1_3"></div>
+            <div class="TFH_1_4">MF-BiLTM Speed Prediction</div>
+        </div>
+    </div>
+    <div class="TF_Time">
+        <span class='TF_TimeBox1'>2018-10-05</span>
+    </div>
+    <div class="backMainForm" title="Home" onclick="javascript:location.href='mainPage.html';">
+        <div class="BMF">
+            <div class="BMF1_1"></div>
+        </div>
+
+    </div>
+    <div class="TF_RightSwitch">
+        <div class="TF_RS_1">
+            <div class="TF_RS_1_1">Echarts</div>
+            <div class="TF_RS_1_2">Query</div>
+        </div>
+    </div>
+    <div class="TF_LeftTopChart">
+        <div class="TF_LTC_1">
+            <div class="TF_LTC_1_1"></div>
+            <div class="TF_LTC_1_2"></div>
+            <div class="TF_LTC_1_3"></div>
+            <div class="TF_LTC_1_4"></div>
+            <div class="TF_LTC_1_5"></div>
+            <div class="TF_LTC_1_6"></div>
+        </div>
+        <div class="TF_LTC_2">
+            <div id='echartbox1'></div>
+        </div>
+    </div>
+    <div class="TF_LeftBottomChart">
+        <div class="TF_LBC_1">
+            <div class="TF_LBC_1_1"></div>
+            <div class="TF_LBC_1_2"></div>
+            <div class="TF_LBC_1_3"></div>
+            <div class="TF_LBC_1_4"></div>
+            <div class="TF_LBC_1_5"></div>
+            <div class="TF_LBC_1_6"></div>
+        </div>
+        <div class="TF_LBC_2">
+            <div id='echartbox2'></div>
+        </div>
+    </div>
+    <div class="TF_LeftTopChartBtn" name='.TF_LeftTopChartBtn'>
+        <div class="TF_LTCB"></div>
+    </div>
+    <div class="TF_LeftBottomChartBtn">
+        <div class="TF_LBCB"></div>
+    </div>
+    <div class="TF_RightChartBtn" name='.TF_LeftTopChartBtn'>
+        <div class="TF_RTCB"></div>
+    </div>
+    <div class="TF_RightTable" style="display: none;">
+        <div class="TF_RT1">
+        </div>
+        <div class="TF_RT2">
+            <table style="table-layout: fixed;">
+                <thead style="table-layout: fixed;word-break:break-all; word-wrap:break-all;">
+                    <tr style="font-size:23px;">
+                        <th style="width: 168px;">RoadName</th>
+                        <th style="width: 69px;">RoadID</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="selectRoadbyClick(281998)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">
+                            Wu Street: Red Star Road</td>
+                        <td>281998</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(281873)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">
+                            The northern section of the first Ring Road
+                        </td>
+                        <td>281873</td>
+
+                    </tr>
+                    <tr onclick="selectRoadbyClick(281879)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">The southern section of the first Ring Road</td>
+                        <td>281879</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(281885)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">Jian Shebeilu:Fu Qinglu</td>
+                        <td>281885</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(281929)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">Da Shixilu:the second Ring Road,the first Ring Road</td>
+                        <td>281929</td>
+                    </tr>
+
+                    <tr onclick="selectRoadbyClick(282063)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">Cheng Jinqing expressway:Zhao Longlu</td>
+                        <td>282063</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(282367)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">Da Tian road:Rong Bei road,Wan Shi road</td>
+                        <td>282367</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(282403)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">San Huanlu:Cheng Long road</td>
+                        <td>282403</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(282405)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">San Huanlu:Jia Lingroad</td>
+                        <td>282405</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(281998)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">
+                            Wu Road:Hong Xing road,Wang Pingbinhe road</td>
+                        <td>281998</td>
+                    </tr>
+                    <tr onclick="selectRoadbyClick(281873)">
+                        <td style="line-height: 25px;text-align: left;word-wrap: break-word;">
+                            The northern section of the first Ring Road
+                        </td>
+                        <td>281873</td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="TF_RightBox" style="display: none;">
+        <div class="TF_RB_1"> </div>
+        <div class="TF_RB_2">
+            <div class="TF_RB_2_1">
+                <div class="TF_RB_2_1_1">Date</div>
+                <input type="text" class="TF_RB_2_1_2">
+            </div>
+            <div class="TF_RB_2_2">
+                <div class="TF_RB_2_2_1">RoadID</div>
+                <select class="TF_RB_2_2_2">
+                    <option value="281998">281998</option>
+                    <option value="281873">281873</option>
+                    <option value="281879">281879</option>
+                    <option value="281885">281885</option>
+                    <option value="281929">281929</option>
+                    <option value="282063">282063</option>
+                    <option value="282367">282367</option>
+                    <option value="282403">282403</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                    <option value="282405">282405</option>
+                </select>
+
+            </div>
+            <div class=" TF_RB_2_3 ">
+                <button class="TF_RB_2_3_1 " type="button ">Query</button>
+                <button class="TF_RB_2_3_2 " type="button ">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" exclude="iclient-classic" src="myjs/mapPredict_option.js" defer=true></script>
+    <script type="text/javascript" exclude="iclient-classic" src="dist/classic/include-classic.js"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" exclude="iclient-classic" src="myjs/jquery.ui.js"></script>
+</body>
+
+</html>

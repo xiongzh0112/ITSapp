@@ -1,0 +1,241 @@
+.stateContral {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 200px;
+    width: 350px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    z-index: 10;
+}
+
+.SCDiv1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 330px;
+    height: 180px;
+    background-color: #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+
+.SCDiv1_1 {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    height: 200px;
+    width: 350px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.SCDiv2 {
+    position: absolute;
+    top: 15PX;
+    left: 75PX;
+    width: 200PX;
+    height: 25PX;
+    background-image: linear-gradient(90deg, #6cb3ff 10%, #4043ff 80%);
+    border-radius: 30px;
+    opacity: 0.9;
+    color: white;
+}
+
+.SCTitle {
+    line-height: 25px;
+    margin: auto;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.SCDiv3 {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    width: 320px;
+    height: 105px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #1EABE3;
+    border-radius: 3px;
+}
+
+.SCLayer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 95px;
+    width: 150px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #1EABE3;
+    border-radius: 3px;
+}
+
+.SCTime {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 95px;
+    width: 150px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #1EABE3;
+    border-radius: 3px;
+}
+
+.SCLTitle {
+    position: absolute;
+    top: 5px;
+    height: 15px;
+    width: 150px;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.SCLSelects {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 150px;
+    height: 70px;
+}
+
+.SCLTextRaster {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 18px;
+    background-color: #14bcff;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.SCLTextVector {
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    width: 60px;
+    height: 18px;
+    background-color: #14bcff;
+    opacity: 0.5;
+    border-radius: 5px;
+}
+
+.SCLSelectRaster {
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    width: 70px;
+    height: 25px;
+}
+
+.SCLSelectVecter {
+    position: absolute;
+    top: 38px;
+    left: 75px;
+    width: 70px;
+    height: 25px;
+}
+
+.SCTTitle {
+    position: absolute;
+    top: 5px;
+    height: 15px;
+    width: 150px;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.SCTSelects {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 150px;
+    height: 70px;
+}
+
+.SCInput {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 132px;
+    height: 20px;
+}
+
+.SCTSelect1 {
+    position: absolute;
+    top: 38px;
+    left: 5px;
+    width: 140px;
+    height: 25px;
+}
+
+.SCDiv4 {
+    position: absolute;
+    top: 162px;
+    left: 80px;
+    height: 23px;
+    width: 250px;
+}
+
+.SCBtn1 {
+    position: absolute;
+    top: 0;
+    left: 72px;
+    width: 50px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+.SCBtn1:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #1EABE3;
+}
+
+.SCResetDiv {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 23px;
+    height: 23px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px #1EABE3;
+}
+
+.SCReset {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 19px;
+    height: 19px;
+    background: url(../picture/重置2.png) no-repeat;
+    background-size: 19px 19px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.SCResetDiv:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #053ba8;
+}

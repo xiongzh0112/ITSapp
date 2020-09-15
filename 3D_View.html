@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0099)http://localhost:8090/myweb/%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91/2020%E5%A4%8FSuperMap/3D_View.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="formcss/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title data-i18n="resources.title_mb_deckglLayer_nyc_census">成都市区交通状况3D视图</title>
+    <link rel="stylesheet" type="text/css" href="formcss/3DViewForm.css">
+    <link rel="stylesheet" type="text/css" href="formcss/rasterSearchTimeContral.css">
+    <link rel="stylesheet" type="text/css" href="myjs/jquery.ui.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style>
+        .openTimeBar:active {
+            box-shadow: 0px 2px 6px 0px #000;
+        }
+        
+        .OTBDiv1 {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            height: 45px;
+            width: 110px;
+            border: 1px solid #053ba8;
+            box-shadow: 0 0 5px #053ba8;
+        }
+        
+        .OTBD1_1 {
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            height: 45px;
+            width: 110px;
+            border: 1px solid #053ba8;
+            box-shadow: 0 0 5px #053ba8;
+        }
+        
+        .OTBD2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 35px;
+            width: 100px;
+            background-color: #053ba8;
+            border-radius: 3px;
+        }
+        
+        .OTBD2_1 {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            height: 25px;
+            width: 30px;
+            border-radius: 3px;
+            background: url(./picture/返回页面.png) no-repeat;
+            background-size: 30px 25px;
+        }
+        
+        .OTBD2_2 {
+            position: absolute;
+            left: 36px;
+            top: 5px;
+            height: 25px;
+            width: 60px;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 1px;
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="headDiv">
+        <div class="headDiv2"></div>
+        <div class="headDiv1">
+            <div class="headDiv1_1"></div>
+            <div class="headDiv1_2"></div>
+            <div class="headDiv1_3"></div>
+            <div class="headDiv1_4"></div>
+            <div class="headDiv1_5"></div>
+            <div class="headDiv1_6"></div>
+            <div class="headDiv1_7"></div>
+            <div class="headDiv1_8"></div>
+            <div class="headDiv1_9"></div>
+            <div class="headDiv1_10"></div>
+            <div class="headDiv1_11"></div>
+        </div>
+    </div>
+    <div class="addLayerDiv" style="z-index: 10;">
+        <div class="addBodyLayer">
+            <div class="ABL1">
+                <div class="ABL1_1"></div>
+            </div>
+            <div class="ABL2">
+                <div class="ABL2_1"></div>
+                <div class="ABL2_2">
+                    <div id="add_deckg_body" type="button" style="height: 70px;" title="关闭">
+                        <p style="transform:rotate(90deg);">Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="addFaceLayer">
+            <div class="AFL1">
+                <div class="AFL1_1"></div>
+            </div>
+            <div class="AFL2">
+                <div class="AFL2_1"></div>
+                <div class="AFL2_2">
+                    <div id="add_deckg_face" type="button" style="height:70px" title="打开">
+                        <p style="transform:rotate(90deg);">Road</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="title">
+        <h2>Congestion of the 3D view</h2>
+        <h2 id="time_head1">2018-1-5 1:00:00</h2>
+    </div>
+    <div class="legendContainer whiteBackground">
+        <div class="LGDiv">
+            <div class="LGDiv1"></div>
+            <div class="LGDiv2"></div>
+            <div class="LGDiv3"></div>
+            <div class="LGDiv4"></div>
+            <div class="LGDiv5"></div>
+            <div class="LGDiv6"></div>
+        </div>
+        <div class="legendHead_flex">
+            <div style="font-size: 16px; font-weight: 900;letter-spacing: 1px;">Chengdu Congestion</div>
+            <div style="font-size: 13px; font-weight: 700;">Polygon Color</div>
+            <div style="font-size: 13px; font-weight: 700;">By Speed</div>
+        </div>
+        <div class="legendBody_flex">
+            <svg width="210px" height="200px" font-size="14px" font-weight="500">
+                <g transform="translate(12, 0)">
+                    <rect width="20" height="20" style="fill: rgb(242,241,162);"></rect>
+                    <text x="30" y="15" fill="white">[0,24.9)</text>
+                </g>
+                <g transform="translate(12, 25)">
+                    <rect width="20" height="20" style="fill: rgb(252,250,88);"></rect>
+                    <text x="30" y="15" fill="white">[24.9,30.7)</text>
+                </g>
+                <g transform="translate(12, 50)">
+                    <rect width="20" height="20" style="fill: rgb(255,225,0);"></rect>
+                    <text x="30" y="15" width="150" fill="white">[30.7,35.9)</text>
+                </g>
+                <g transform="translate(12, 75)">
+                    <rect width="20" height="20" style="fill: rgb(255,98,0);"></rect>
+                    <text x="30" y="15" width="150" fill="white">[35.9,41.9)</text>
+                </g>
+                <g transform="translate(12, 100)">
+                    <rect width="20" height="20" style="fill: rgb(247,5,138);"></rect>
+                    <text x="30" y="15" width="150" fill="white">[41.9,49.9)</text>
+                </g>
+                <g transform="translate(12, 125)">
+                    <rect width="20" height="20" style="fill: rgb(206,7,237);"></rect>
+                    <text x="30" y="15"  width="150" fill="white">[49.9,62.1)</text>
+                </g>
+                <g transform="translate(12, 150)">
+                    <rect width="20" height="20" style="fill: rgb(111,25,209);"></rect>
+                    <text x="30" y="15" width="150" fill="white">[62.1,81.1)</text>
+                </g>
+                <g transform="translate(12, 175)">
+                    <rect width="20" height="20" style="fill: rgb(7,29,173);"></rect>
+                    <text x="30" y="15" width="150" fill="white">[81.1,----]</text>
+                </g>
+            </svg>
+
+        </div>
+    </div>
+    <div class="BtimeLine">
+
+        <div class="BTLDiv1">
+            <div class="BTLDiv1_1"></div>
+            <div class="BTLDiv1_2"></div>
+            <div class="BTLDiv1_3"></div>
+            <div class="BTLDiv1_4"></div>
+            <div class="BTLDiv1_5"></div>
+            <div class="BTLDiv1_6"></div>
+            <div class="BTLDiv1_7"></div>
+            <div class="BTLDiv1_8"></div>
+        </div>
+        <div class="BTLDiv2">
+            <!-- 播放暂停 -->
+            <div class="playAndStopDiv">
+                <div class="playAndStop3D" style="position: absolute;
+                top: 2px;
+                left: 2px;
+                height: 25px;
+                width: 25px;
+                background-image: url(picture/播放.png);
+                background-size: 25px 25px;"></div>
+            </div>
+            <!-- 标题 -->
+            <div class="timeLineTitleDiv" style="width:300px">
+                <div class="timeLineTitle" style="width:300px">Animation Controller</div>
+            </div>
+            <!-- 选择 -->
+            <div class="timeLineSelectDiv">
+                <select id='timeUnit_sel' class="selectContain" name="layers">
+                    <option value="" disabled selected hidden>The time interval</option>
+                    <option value="hours" selected="selected">hours</option>
+                    <option value="day">day</option>
+                </select>
+            </div>
+            <!-- 时间线 -->
+            <div class="mainLine">
+                <!-- 重置 -->
+                <div class="timeResetDiv" title="重置">
+                    <div class="timeReset"></div>
+                </div>
+                <!-- 向左 -->
+                <div class="toLeft" id="toLeft" title="向前">
+                    <div class="toLeftDiv1"></div>
+                    <div class="toLeftDiv2"></div>
+                    <div class="toLeftDiv3"></div>
+                </div>
+                <!-- 向右 -->
+                <div class="toRight" title="向后">
+                    <div class="toRightDiv1"></div>
+                    <div class="toRightDiv2"></div>
+                    <div class="toRightDiv3"></div>
+                </div>
+                <div class="mainLineAndPoint">
+
+                    <div class="mainLineHidden">
+                        <!-- 线 -->
+                        <div class="mainTimeLine">
+                        </div>
+                        <!-- 点 -->
+                        <div class="mainTimePoint">
+                            <div class="TP1"></div>
+                            <div class="TP2"></div>
+                            <div class="TP3"></div>
+                            <div class="TP4"></div>
+                            <div class="TP5"></div>
+                            <div class="TP6"></div>
+                            <div class="TP7"></div>
+                            <div class="TP8"></div>
+                            <div class="TP9"></div>
+                            <div class="TP10"></div>
+                            <div class="TP11"></div>
+                            <div class="TP12"></div>
+                            <div class="TP13"></div>
+                            <div class="TP14"></div>
+                            <div class="TP15"></div>
+                            <div class="TP16"></div>
+                            <div class="TP17"></div>
+                            <div class="TP18"></div>
+                            <div class="TP19"></div>
+                        </div>
+                        <!-- 文字 -->
+                        <div class="mainTimeText">
+                            <div class="TT1">-</div>
+                            <div class="TT2">-</div>
+                            <div class="TT3">-</div>
+                            <div class="TT4">-</div>
+                            <div class="TT5">-</div>
+                            <div class="TT6">-</div>
+                            <div class="TT7">-</div>
+                            <div class="TT8">-</div>
+                            <div class="TT9">-</div>
+                            <div class="TT10">1:00</div>
+                            <div class="TT11">-</div>
+                            <div class="TT12">-</div>
+                            <div class="TT13">-</div>
+                            <div class="TT14">-</div>
+                            <div class="TT15">-</div>
+                            <div class="TT16">-</div>
+                            <div class="TT17">-</div>
+                            <div class="TT18">-</div>
+                            <div class="TT19">-</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="timeStateContral" style="position:absolute;right:80px;bottom:35px;">
+        <div class="TSC1">
+            <div class="TSC1_1"></div>
+        </div>
+        <div class="TSC2">
+            <div class="TSCTitle1">State</div>
+        </div>
+        <div class="TSC3">
+            <div class="TSCTitle2">Time</div>
+            <div class="TSCSelects">
+                <input type="text" class="TSCInput" placeholder="Date" />
+                <select class="TSCSelect1">
+                    <option  value="defaultime" selected='selected'>To choose time</option>
+                    <option value="defaultime1">1:00</option>
+                    <option value="">2:00</option>
+                    <option value="">3:00</option>
+                    <option value="">4:00</option>
+                    <option value="">5:00</option>
+                    <option value="">6:00</option>
+                    <option value="">7:00</option>
+                    <option value="">8:00</option>
+                    <option value="">9:00</option>
+                    <option value="">10:00</option>
+                    <option value="">11:00</option>
+                    <option value="">12:00</option>
+                    <option value="">13:00</option>
+                    <option value="">14:00</option>
+                    <option value="">15:00</option>
+                    <option value="">16:00</option>
+                    <option value="">17:00</option>
+                    <option value="">18:00</option>
+                    <option value="">19:00</option>
+                    <option value="">21:00</option>
+                    <option value="">22:00</option>
+                    <option value="">23:00</option>
+                    <option value="">24:00</option>
+                </select>
+            </div>
+        </div>
+        <div class="TSC4">
+            <button class="TSCBtn1" type="button" value="">OK</button>
+            <div class="TSCResetDiv">
+                <div class="TSCReset"></div>
+            </div>
+        </div>
+    </div>
+    <div class="openTimeBar" style="position: absolute;top:20px;left:60px;z-index: 51;border-radius: 3px;height: 35px;
+    width: 160px;border:2px solid #053ba8;opacity: 0.9;cursor: pointer;">
+        <div class="OTBDiv1" style="width: 170px;">
+            <div class="OTBD1_1" style="width: 168px;"></div>
+        </div>
+        <div class="OTBD2" style="width: 160px;">
+            <div class="OTBD2_1"></div>
+            <div class="OTBD2_2" style="width: 120px;" onClick="javascript:location.href='mainPage.html';">The plane view</div>
+        </div>
+    </div>
+    <div id="map" class="mapboxgl-map"></div>
+    <script type="text/javascript" include="widgets" src="js/include-web.js"></script>
+    <script type="text/javascript" include="deck" src="dist/mapboxgl/include-mapboxgl.js"></script>
+    <script type="text/javascript" exclude="iclient-classic" src="mapOptionJS/3DViewmap_option.js"></script>
+    <script type="text/javascript" exclude="iclient-classic" src="myjs/jquery.ui.js"></script>
+
+</body>
+
+
+</html>

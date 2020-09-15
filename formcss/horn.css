@@ -1,0 +1,76 @@
+.horn{
+    position: absolute;
+    width: 15PX;
+    height: 15PX;
+    opacity: 0.7;
+}
+.borderHorn{
+    color: transparent;
+}
+.Hlt{
+    top: -3PX;
+    left: -3PX;
+    border-left: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    box-shadow:-2px -2px 5px #265a91;
+}
+.Hlb{
+    bottom: -3px;
+	left: -3px;
+	border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    box-shadow:-2px 2px 5px #265a91 ;
+}
+.Hrt{
+    top: -3px;
+	right: -3px;
+	border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    box-shadow: 2px -2px 5px #265a91 ;
+}
+.Hrb{
+    bottom: -3px;
+	right: -3px;
+	border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    box-shadow: 2px 2px 5px #265a91;
+}
+/* 拥堵路段预测专属特效 */
+/* .Rborder{
+    position: absolute;
+    width: 15PX;
+    height: 15PX;
+    opacity: 0.7;
+}
+.roadsBorderHorn{
+    color: transparent;
+}
+
+.Blt{
+    top: -3PX;
+    left: -3PX;
+    border-left: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    box-shadow:-2px -2px 5px #265a91;
+}
+.Blb{
+    bottom: -6px;
+	left: -3px;
+	border-bottom: 3px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    box-shadow:-2px 2px 5px #265a91 ;
+}
+.Brt{
+    top: -3px;
+	right: -6px;
+	border-right: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+    box-shadow: 2px -2px 5px #265a91 ;
+}
+.Brb{
+    bottom: -6px;
+	right: -6px;
+	border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    box-shadow: 2px 2px 5px #265a91;
+} */

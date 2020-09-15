@@ -1,0 +1,178 @@
+.selectTimeAndWeight {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    height: 200px;
+    width: 230px;
+    box-shadow: 0 0 5px #053ba8;
+    border: 1px solid #053ba8;
+    z-index: 10;
+    display: none;
+}
+
+.STAWDiv1 {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 200px;
+    width: 230px;
+    box-shadow: 0 0 5px #053ba8;
+    border: 1px solid #053ba8;
+}
+
+.STAWDiv2 {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 186px;
+    width: 216px;
+    background-color: #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 3px;
+}
+
+.STAWTime {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    height: 70px;
+    width: 200px;
+    box-shadow: 0 0 5px #1EABE3;
+    border-radius: 3px;
+}
+
+.STAWTime1 {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    color: white;
+    line-height: 15px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.STAWTime2 {
+    position: absolute;
+    top: 3px;
+    left: 45px;
+    height: 70px;
+    width: 150px;
+}
+
+.STAWTime2_1 {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 135px;
+    height: 20px;
+    outline: none;
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.STAWTime2_2 {
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    width: 140px;
+    height: 25px;
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.STAWWeight {
+    position: absolute;
+    top: 90px;
+    left: 5px;
+    height: 36px;
+    width: 200px;
+    box-shadow: 0 0 5px #1EABE3;
+    border-radius: 3px;
+}
+
+.STAWWeight1 {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: white;
+    line-height: 15px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.STAWWeight2 {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    width: 135px;
+    height: 20px;
+    border-style: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.STAWDivBtn {
+    position: absolute;
+    top: 145px;
+    left: 15px;
+    height: 23px;
+    width: 150px;
+}
+
+.STAWDivBtn1 {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 50px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    border-width: 0;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #000;
+}
+
+.STAWDivBtn1:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #1EABE3;
+}
+
+.STAWDivBtn1:active {
+    box-shadow: 0px 2px 6px 0px #000;
+}
+
+.STAWDivBtn2 {
+    position: absolute;
+    top: 0px;
+    left: 115px;
+    width: 50px;
+    height: 23px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    border-width: 0;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #000;
+}
+
+.STAWDivBtn2:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #1EABE3;
+}
+
+.STAWDivBtn2:active {
+    box-shadow: 0px 2px 6px 0px #000;
+}

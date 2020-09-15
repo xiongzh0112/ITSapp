@@ -1,0 +1,208 @@
+#mbox {
+    position: absolute;
+    left: 30px;
+    bottom: 34px;
+    width: 320px;
+    height: 150px;
+    z-index: 8;
+    opacity: 0.9;
+    background: linear-gradient(45deg, transparent 20px, transparent 0);
+}
+
+.sideBarLink {
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+}
+
+#mlink {
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 40px;
+    height: 40px;
+    background: url(../picture/images/sanjiao.png) no-repeat;
+    background-size: 40px 40px;
+}
+
+.mlinkDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.MLD1 {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: 1px;
+    height: 15px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MLD2 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 15px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBDiv {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 150px;
+}
+
+.MBD1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBD2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBD3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBD4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBD5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBD6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.MBTable {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 290px;
+    height: 90px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+#mbox table {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 280px;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    margin: auto;
+    background-color: #053ba8;
+    opacity: 0.9;
+}
+
+#mbox td {
+    vertical-align: middle;
+    border-right: #FFFFFF solid 1px;
+    width: 150px;
+    padding: 5px;
+    color: white;
+}
+
+#mbox th {
+    width: 50px;
+    color: white;
+    font-size: 15px;
+    border-right: #FFFFFF solid 1px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+#mbox tr {
+    height: 40px;
+    border: #FFFFFF solid 1px;
+}
+
+.note {
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
+    opacity: 0.9;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.noteDiv {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 240px;
+    height: 25px;
+    background-color: #053ba8;
+}
+
+.note p {
+    padding-left: 10px;
+    padding-top: 2px;
+    color: white;
+    vertical-align: middle;
+}
+
+.MLcloseBtn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}

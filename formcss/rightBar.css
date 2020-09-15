@@ -1,0 +1,189 @@
+.trendDivBox {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    height: 500px;
+    width: 750px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 8px #053ba8;
+    z-index: 11;
+    border-radius: 5px;
+}
+
+.trend {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 480px;
+    width: 730px;
+}
+
+.trendBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 480px;
+    width: 730px;
+    box-shadow: 0 0 8px#053ba8;
+    border: 1px solid #053ba8;
+    border-radius: 5px;
+}
+
+.chart {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    height: 410px;
+    width: 710px;
+    box-shadow: 0 0 8px #1EABE3;
+    border: 1px solid #1EABE3;
+    background-color: beige;
+    border-radius: 5px;
+}
+
+.roadsDivBox {
+    position: absolute;
+    bottom: 15px;
+    right: 5px;
+    height: 800px;
+    width: 500px;
+    box-shadow: 0 0 8px#053ba8;
+    border: 1px solid #053ba8;
+    z-index: 11;
+}
+
+.roads {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 780px;
+    width: 480px;
+}
+
+.roadsBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 780px;
+    width: 480px;
+    background-color: #053ba8;
+    box-shadow: 0 0 8px#053ba8;
+    border: 1px solid #053ba8;
+    border-radius: 5px;
+}
+
+#rightBar1 .title {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 580px;
+    height: 35px;
+    background-image: linear-gradient(to right, #6cb3ff 10%, transparent 80%);
+    line-height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 16;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+#rightBar2 .title {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 480px;
+    height: 35px;
+    background-image: linear-gradient(to right, #6cb3ff 10%, transparent 80%);
+    line-height: 35px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    padding-left: 20px;
+    border-radius: 30px;
+}
+
+.roads table {
+    position: absolute;
+    top: 60px;
+    left: 5px;
+    height: 720px;
+    width: 470px;
+    text-align: center;
+    border-bottom: white solid;
+    border-width: 1px;
+    border-collapse: collapse;
+}
+
+.roads thead {
+    width: 470px;
+    background: #1EABE3;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.roads tr {
+    width: 470px;
+}
+
+.roads tbody {
+    widows: 468px;
+    vertical-align: middle;
+    text-align: center;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+.roads td {
+    height: 65px;
+    vertical-align: middle;
+    height: 40px;
+    width: 468px;
+    border-bottom: white solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    line-height: 65px;
+}
+
+.roads td:first-child {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.roads td.doubleline {
+    line-height: 20px;
+    text-align: left;
+}
+
+.roads tbody tr:hover {
+    background-color: #1EABE3;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1EABE3;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}

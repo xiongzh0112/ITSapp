@@ -1,0 +1,164 @@
+.timeStateContral {
+    position: absolute;
+    bottom: 100px;
+    right: 350px;
+    height: 150px;
+    width: 250px;
+    box-shadow: 0 0 8px #053ba8;
+    background-color: #1EABE3;
+    border-radius: 3px;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.TSC1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    height: 170px;
+    width: 270px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TSC1_1 {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 170px;
+    width: 270px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 5px #053ba8;
+}
+
+.TSC2 {
+    position: absolute;
+    top: 5PX;
+    left: 50PX;
+    width: 150PX;
+    height: 22PX;
+    background-image: linear-gradient(90deg, #6cb3ff 10%, #4043ff 80%);
+    border-radius: 30px;
+    color: white;
+}
+
+.TSCTitle1 {
+    line-height: 20px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.TSC3 {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    width: 230px;
+    height: 85px;
+    box-shadow: 0 0 5px #053ba8;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.TSCTitle2 {
+    position: absolute;
+    top: 3px;
+    left: 78px;
+    height: 15px;
+    width: 70px;
+    line-height: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.TSCSelects {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    width: 210px;
+    height: 70px;
+}
+
+.TSCInput {
+    position: absolute;
+    top: 5px;
+    left: 28px;
+    width: 150px;
+    height: 18px;
+}
+
+.TSCSelect1 {
+    position: absolute;
+    top: 35px;
+    left: 28px;
+    width: 157px;
+    height: 25px;
+}
+
+.TSC4 {
+    position: absolute;
+    top: 125px;
+    left: 40px;
+    width: 200px;
+    height: 20px;
+}
+
+.TSCBtn1 {
+    position: absolute;
+    top: 0;
+    left: 58px;
+    width: 48px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    border-width: 0;
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px #000;
+}
+
+.TSCBtn1:hover {
+    transition: .3s linear;
+    /*过渡动画*/
+    background-color: #1EABE3;
+}
+
+.TSCBtn1:active {
+    box-shadow: 0px 2px 6px 0px #000;
+}
+
+.TSCResetDiv {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 1px 2px 0px #000;
+}
+
+.TSCReset {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: url(../picture/重置2.png) no-repeat;
+    background-size: 16px 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.TSCResetDiv:active {
+    box-shadow: 0px 2px 6px 0px #000;
+}

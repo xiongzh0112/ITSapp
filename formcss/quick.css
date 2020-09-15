@@ -1,0 +1,248 @@
+.qucik {
+    position: fixed;
+    top: 100px;
+    right: 5px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.openQuickList {
+    position: absolute;
+    top: 25px;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid #1EABE3;
+    border-radius: 6px;
+    transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    -o-transform: translateX(-110%);
+    box-shadow: 0 0 2px #1EABE3;
+}
+
+.openQuick {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url(../picture/菜单-填充2.png) no-repeat;
+    background-size: 28px 28px;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+.quickList {
+    height: 150px;
+    width: 120px;
+    opacity: 1;
+    flex-direction: column;
+}
+
+.quickListNavi {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 130px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+    opacity: 1;
+    list-style: none;
+}
+
+.qucik li {
+    top: 5px;
+    width: 80px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #013DB9;
+    border-radius: 15px;
+    display: inline-block;
+    list-style: none;
+    opacity: 0.8;
+}
+
+.OPLDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+}
+
+.OPLD1 {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 1px;
+    width: 10px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD2 {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    height: 10px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD3 {
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    height: 1px;
+    width: 10px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD4 {
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    height: 10px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD5 {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 1px;
+    width: 10px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD6 {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    height: 10px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD7 {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    height: 1px;
+    width: 10px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.OPLD8 {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    height: 10px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLDiv {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 150px;
+    width: 120px;
+}
+
+.QLD1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1px;
+    width: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 1px;
+    width: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    width: 20px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD7 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.QLD8 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    width: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}

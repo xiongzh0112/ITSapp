@@ -1,0 +1,1175 @@
+﻿/* head */
+
+.headDiv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1000px;
+    z-index: 11;
+}
+
+.headDiv2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1000px;
+    height: 30px;
+    background-color: #053ba8;
+    background: linear-gradient(135deg, transparent 21px, #053ba8 0);
+    background: linear-gradient(to left, #053ba8 10%, transparent 90%);
+}
+
+.headDiv1 {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 600px;
+    height: 30px;
+}
+
+.headDiv1_1 {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_2 {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    height: 1px;
+    width: 500px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_3 {
+    position: absolute;
+    top: 5px;
+    right: 512px;
+    width: 4px;
+    height: 4px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_4 {
+    position: absolute;
+    top: 13px;
+    right: 590px;
+    width: 4px;
+    height: 4px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_5 {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    height: 1px;
+    width: 50px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_6 {
+    position: absolute;
+    top: 18px;
+    left: 59px;
+    width: 30px;
+    height: 1px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 3px white;
+    transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+}
+
+.headDiv1_7 {
+    position: absolute;
+    top: 22px;
+    left: 88px;
+    height: 1px;
+    width: 400px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_8 {
+    position: absolute;
+    top: 21px;
+    left: 488px;
+    width: 4px;
+    height: 4px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_9 {
+    position: absolute;
+    top: 13px;
+    left: 120px;
+    width: 4px;
+    height: 4px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_10 {
+    position: absolute;
+    top: 14px;
+    left: 120px;
+    height: 1px;
+    width: 450px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 3px white;
+}
+
+.headDiv1_11 {
+    position: absolute;
+    top: 13px;
+    left: 570px;
+    width: 4px;
+    height: 4px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+    box-shadow: 0 0 3px white;
+}
+
+.addLayerDiv {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    height: 200px;
+    width: 120px;
+}
+
+.addBodyLayer {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    width: 40px;
+    height: 200px;
+}
+
+.addFaceLayer {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    width: 40px;
+    height: 200px;
+}
+
+.ABL1 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 30px;
+    height: 60px;
+    z-index: 10;
+}
+
+.AFL1 {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 30px;
+    height: 60px;
+    z-index: 10;
+}
+
+.ABL1_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 60px;
+    background: url(../picture/消弧线圈.png) no-repeat;
+    background-size: 30px 60px;
+}
+
+.AFL1_1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 60px;
+    background: url(../picture/消弧线圈.png) no-repeat;
+    background-size: 30px 60px;
+}
+
+.ABL2 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 40px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.AFL2 {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 40px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.ABL2_1 {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 2px;
+    height: 20px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 1px white;
+}
+
+.AFL2_1 {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    width: 2px;
+    height: 20px;
+    background-color: #1eabe3;
+    box-shadow: 0 0 1px white;
+}
+
+.ABL2_2 {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 30px;
+    height: 90px;
+    border: 2px solid #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.AFL2_2 {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    width: 30px;
+    height: 90px;
+    border: 2px solid #053ba8;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+#add_deckg_body {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 20px;
+    line-height: 16px;
+    outline: none;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: #053ba8;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    padding-top: 5px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 1px #053ba8;
+    background-color: white;
+}
+
+#add_deckg_face {
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 20px;
+    line-height: 16px;
+    outline: none;
+    border-style: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: #053ba8;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+    padding-top: 5px;
+    border: 1px solid #053ba8;
+    box-shadow: 0 0 1px #053ba8;
+    background-color: white;
+}
+
+
+/* 成都市交通状况 */
+
+.legendContainer {
+    position: absolute;
+    top: 100px;
+    left: 70px;
+    width: 230px;
+    height: 295px;
+    background-color: #14bcff;
+    box-shadow: 0 0 4px #053ba8;
+    opacity: 0.9;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.LGDiv {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 246px;
+    height: 311px;
+    border: 1px #053ba8 solid;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.LGDiv1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.LGDiv2 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 50px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.LGDiv3 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 1px;
+    height: 331px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.LGDiv4 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 1px;
+    height: 331px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.LGDiv5 {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 70px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.LGDiv6 {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 70px;
+    height: 1px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.legendHead_flex {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 200px;
+    height: 60px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.legendBody_flex {
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    width: 210px;
+    height: 200px;
+}
+
+
+/* 时间轴 */
+
+.BtimeLine {
+    position: absolute;
+    bottom: 35px;
+    left: 80px;
+    width: 1310px;
+    height: 110px;
+    border: 1px #053ba8 solid;
+    box-shadow: 0 0 3px #053ba8;
+    z-index: 10;
+}
+
+.BTLDiv1 {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 1310px;
+    height: 110px;
+}
+
+.BTLDiv1_1 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_2 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_3 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 2px;
+    height: 30px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_4 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 2px;
+    height: 30px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_5 {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_6 {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 30px;
+    height: 2px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_7 {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 2px;
+    height: 30px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv1_8 {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 2px;
+    height: 30px;
+    background-color: #053ba8;
+    box-shadow: 0 0 2px #053ba8;
+}
+
+.BTLDiv2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 1300px;
+    height: 100px;
+    background-color: #1eabe3;
+    background-image: url(../picture/kuang\ -\ 副本.png);
+    background-repeat: no-repeat;
+    background-size: 1400px 120px;
+    background-position: -100px 0;
+    opacity: 0.9;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #053ba8;
+}
+
+.playAndStopDiv {
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    height: 29px;
+    width: 29px;
+    box-shadow: 0 0 3px #053ba8;
+    border-radius: 5px;
+}
+
+.playAndStopDiv:hover {
+    background-color: #14bcff;
+}
+
+.playAndStop {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 25px;
+    width: 25px;
+    background-image: url(../picture/播放.png);
+    background-size: 25px 25px;
+}
+
+.timeLineTitleDiv {
+    position: absolute;
+    top: 10px;
+    left: 580px;
+    width: 150px;
+    height: 25px;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: 0 0 8px #053ba8;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#timeLineTitle1 {
+    line-height: 25px;
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.timeLineSelectDiv {
+    position: absolute;
+    top: 10px;
+    left: 1000px;
+    width: 102px;
+    height: 25px;
+    box-shadow: 0 0 8px #053ba8;
+}
+
+.selectContain {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 96px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.mainLine {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    width: 1300px;
+    height: 55px;
+}
+
+.timeResetDiv {
+    position: absolute;
+    top: 16px;
+    left: 80px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #053ba8;
+    border-radius: 5px;
+}
+
+#Chose_CurrentTime {
+    position: absolute;
+    bottom: 50px;
+    left: 620px;
+    width: 78px;
+    height: 18px;
+    border: 1px solid rgb(238, 232, 56);
+    background-color: #14bcff;
+    z-index: 10;
+    border-radius: 3px;
+    opacity: 0.9;
+    box-shadow: 0 0 8px rgb(238, 232, 56);
+}
+
+.Chose_CurrentTime3D {
+    position: absolute;
+    bottom: 50px;
+    left: 620px;
+    width: 78px;
+    height: 18px;
+    border: 1px solid rgb(238, 232, 56);
+    background-color: #14bcff;
+    z-index: 10;
+    border-radius: 3px;
+    opacity: 0.9;
+    box-shadow: 0 0 8px rgb(238, 232, 56);
+}
+
+#timeBarHourChoose {
+    position: absolute;
+    bottom: 3px;
+    left: 630px;
+    z-index: 50;
+    border: 1px solid rgb(238, 232, 56);
+    background-color: #14bcff;
+    border-radius: 3px;
+    opacity: 0.9;
+    box-shadow: 0 0 8px rgb(238, 232, 56);
+    display: none;
+}
+
+.timeResetDiv:hover {
+    background-color: #14bcff;
+}
+
+.timeReset {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: url(../picture/重置.png) no-repeat;
+    background-size: 20px 20px;
+}
+
+.toLeft {
+    position: absolute;
+    top: 15px;
+    left: 130px;
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #053ba8;
+    border-radius: 20px;
+}
+
+.toLeft:hover {
+    background-color: #14bcff;
+}
+
+.toLeftDiv1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 15px;
+    background: url(../picture/向左.png) no-repeat;
+    background-size: 15px 25px;
+}
+
+.toLeftDiv2 {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 25px;
+    width: 15px;
+    background: url(../picture/向左.png) no-repeat;
+    background-size: 15px 25px;
+}
+
+.toLeftDiv3 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 25px;
+    width: 15px;
+    background: url(picture/向左.png) no-repeat;
+    background-size: 15px 25px;
+}
+
+.toRight {
+    position: absolute;
+    top: 15px;
+    right: 130px;
+    height: 25px;
+    width: 40px;
+    cursor: pointer;
+    box-shadow: 0 0 8px #053ba8;
+    border-radius: 20px;
+}
+
+.toRight:hover {
+    background-color: #14bcff;
+}
+
+.toRightDiv1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 15px;
+    background: url(../picture/向右.png) no-repeat;
+    background-size: 15px 25px;
+}
+
+.toRightDiv2 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 25px;
+    width: 15px;
+    background: url(../picture/向右.png) no-repeat;
+    background-size: 15px 25px;
+}
+
+.toRightDiv3 {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 25px;
+    width: 15px;
+    background: url(../picture/向右.png) no-repeat;
+    background-size: 15px 25px;
+}
+
+.mainLineAndPoint {
+    position: absolute;
+    top: 13px;
+    left: 200px;
+    height: 30px;
+    width: 900px;
+    background: #053ba8;
+    overflow: hidden;
+}
+
+.mainLineHidden {
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    height: 30px;
+    width: 1300px;
+}
+
+.mainTimeLine {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 1300px;
+    height: 1px;
+    background-color: black;
+}
+
+.mainTimePoint {
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    width: 1300px;
+    height: 5px;
+}
+
+.TP1 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP2 {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP3 {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP4 {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP5 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP6 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP7 {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP8 {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP9 {
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP10 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+}
+
+.TP11 {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP12 {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP13 {
+    position: absolute;
+    top: 0;
+    left: 65%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP14 {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP15 {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP16 {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP17 {
+    position: absolute;
+    top: 0;
+    left: 85%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP18 {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.TP19 {
+    position: absolute;
+    top: 0;
+    left: 95%;
+    width: 5px;
+    height: 5px;
+    background-color: #1eabe3;
+    border-radius: 50%;
+}
+
+.mainTimeText {
+    position: absolute;
+    top: 14px;
+    left: -12px;
+    width: 1300px;
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-size: 10px;
+}
+
+.TT1 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 5%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT2 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 10%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT3 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 15%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT4 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 20%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT5 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 25%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT6 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 30%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT7 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 35%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT8 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 40%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT9 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 45%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT10 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 50%;
+    height: 15px;
+    width: 30px;
+    color: yellow;
+}
+
+.TT11 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 55%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT12 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 60%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT13 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 65%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT14 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 70%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT15 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 75%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT16 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 80%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT17 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 85%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT18 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 90%;
+    height: 15px;
+    width: 30px;
+}
+
+.TT19 {
+    position: absolute;
+    line-height: 15px;
+    top: 0px;
+    left: 95%;
+    height: 15px;
+    width: 30px;
+}

@@ -1,0 +1,790 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MainPage</title>
+    <link rel="stylesheet" type="text/css" href="formcss/reset.css">
+    <link rel="stylesheet" type="text/css" href="formcss/head.css">
+    <link rel="stylesheet" type="text/css" href="formcss/rightBar.css">
+    <link rel="stylesheet" type="text/css" href="formcss/mapCcontainer.css">
+    <link rel="stylesheet" type="text/css" href="formcss/sideBar.css">
+    <link rel="stylesheet" type="text/css" href="formcss/quick.css">
+    <link rel="stylesheet" type="text/css" href="formcss/queryBox.css">
+    <link rel="stylesheet" type="text/css" href="formcss/symbol.css">
+    <link rel="stylesheet" type="text/css" href="formcss/body.css">
+    <link rel="stylesheet" type="text/css" href="formcss/horn.css">
+    <link rel="stylesheet" type="text/css" href="formcss/main.css">
+    <link rel="stylesheet" type="text/css" href="formcss/rasterSearchTimeContral.css">
+    <link rel="stylesheet" type="text/css" href="formcss/rasterSearchEcharttSwich.css">
+    <link rel="stylesheet" type="text/css" href="formcss/selectTimeAndWeight.css">
+    <link rel="stylesheet" type="text/css" href="formcss/stateContral.css">
+    <link rel="stylesheet" type="text/css" href="myjs/jquery.ui.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="formjs/openOrHidden.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+    <script type="text/javascript" src="formjs/moveDiv.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <div id="header">
+            <div class="head_Icon" style="position:absolute; top: 8px;left: 10px;height: 75px;
+            width: 300px; background: url(picturE/ICON2.png) no-repeat;z-index: 12;background-size: 300px 75px;"></div>
+            <div class="HBGN">
+                <div class="HBGN1">
+                    <div class="HBGN1_1"></div>
+                    <div class="HBGN1_2"></div>
+                    <div class="HBGN1_3"></div>
+                </div>
+                <div class="HBGN2">
+                    <div class="HBGN2_1"></div>
+                    <div class="HBGN2_2"></div>
+                    <div class="HBGN2_3"></div>
+                    <div class="HBGN2_4"></div>
+                    <div class="HBGN2_5"></div>
+                    <div class="HBGN2_6"></div>
+                    <div class="HBGN2_7"></div>
+                    <div class="HBGN2_8"></div>
+                    <div class="HBGN2_9"></div>
+                    <div class="HBGN2_10"></div>
+                    <div class="HBGN2_11"></div>
+                    <div class="HBGN2_12"></div>
+                    <div class="HBGN2_13"></div>
+                    <div class="HBGN2_14"></div>
+                    <div class="HBGN2_15"></div>
+                    <div class="HBGN2_16"></div>
+                    <div class="HBGN2_17"></div>
+                    <div class="HBGN2_18"></div>
+                    <div class="HBGN2_19"></div>
+                    <div class="HBGN2_20"></div>
+                    <div class="HBGN2_21"></div>
+                    <div class="HBGN2_22"></div>
+                    <div class="HBGN2_23"></div>
+                    <div class="HBGN2_24"></div>
+                    <div class="HBGN2_25"></div>
+                </div>
+            </div>
+            <div class="HBGImage">
+                <img class="HBGImage1" src="picture/jinwei2.png" />
+            </div>
+            <div class="HBSymbol">
+                <div class="HLDiv">
+                    <div class="HLD1"></div>
+                    <div class="HLD3"></div>
+                    <div class="HLD2">
+                        <div class="HLD2_1"></div>
+                        <div class="HLD2_2"></div>
+                        <div class="HLD2_3"></div>
+                    </div>
+                    <div class="HLD4"></div>
+                    <div class="HLD5"></div>
+                </div>
+                <div class="HMDiv">
+                    <div class="HMD1"></div>
+                    <div class="HMD2"></div>
+                    <div class="HMD3" style="text-align:center;vertical-align: middle;color: #ff0008;font-size: 28px;">2018-1-5 1:00:00</div>
+                    <div class="HMD4"></div>
+                    <div class="HMD5"></div>
+                </div>
+                <div class="HRDiv">
+                    <div class="HRD1"></div>
+                    <div class="HRD3"></div>
+                    <div class="HRD2">
+                        <div class="HRD2_1"></div>
+                        <div class="HRD2_2"></div>
+                        <div class="HRD2_3"></div>
+                    </div>
+                    <div class="HRD4"></div>
+                    <div class="HRD5"></div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div id="nav">
+                    <ul class="right">
+                        <li class="right" id="crossCityStatis">
+                            <a onclick="showAnalysisMainForm()">Analysis</a>
+                        </li>
+                        <li class="right" id="predict" onclick="javascript:location.href='Traffic_Forecast.html';">
+                            <a class="">Prediction</a>
+                        </li>
+                        <li class="right" id="high_congest">
+                            <a href="">RoadLine</a>
+                        </li>
+                        <li class="right" onclick="loadRasterSearchMap()" id="see_life">
+                            <a>GridValue</a>
+                        </li>
+                        <li class="right" onclick="loadRastermap()" id="see_detail">
+                            <a>Animation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="trendDivBox" id="rightBar1">
+            <div class="trend">
+                <div class="trendBox">
+                    <h3 class="title">The Road Congestion</h3>
+                    <div id="VecterLoadEchart1" class="chart"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="roadsDivBox" id="rightBar2">
+            <div class="roads">
+                <div class="roadsBox">
+                    <h3 class="title">List of the Road Speed</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:45px;">
+                                    Rank
+                                </th>
+                                <th style="width:200px;">
+                                    Name
+                                </th>
+                                <th style="width:100px;">
+                                    Length(m)
+                                </th>
+                                <th style="width:70px;">
+                                    Speed(km/h)
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="rank1" onclick="Searchrank(1)">
+                                <td>1</td>
+                                <td id="rankTB1_1" class="doubleline">Huang Long road</td>
+                                <td id="rankTB1_2">40381</td>
+                                <td id="rankTB1_3">133</td>
+                            </tr>
+                            <tr onclick="Searchrank(2)">
+                                <td>2</td>
+                                <td id="rankTB2_1" class="doubleline">Cheng Luo road,Hu li Gou</td>
+                                <td id="rankTB2_2">25948</td>
+                                <td id="rankTB2_3">107</td>
+                            </tr>
+                            <tr onclick="Searchrank(3)">
+                                <td>3</td>
+                                <td id="rankTB3_1" class="doubleline">Nan Quan,Cheng Peng road</td>
+                                <td id="rankTB3_2">24598</td>
+                                <td id="rankTB3_3">104</td>
+                            </tr>
+                            <tr onclick="Searchrank(4)">
+                                <td>4</td>
+                                <td id="rankTB4_1" class="doubleline">Cheng Peng</td>
+                                <td id="rankTB4_2">24365</td>
+                                <td id="rankTB4_3">100</td>
+                            </tr>
+                            <tr onclick="Searchrank(5)">
+                                <td>5</td>
+                                <td id="rankTB5_1" class="doubleline">Hu Rong road,Xing Long road</td>
+                                <td id="rankTB5_2">36478</td>
+                                <td id="rankTB5_3">100</td>
+                            </tr>
+                            <tr onclick="Searchrank(6)">
+                                <td>6</td>
+                                <td id="rankTB6_1" class="doubleline">Jie Dai overpass</td>
+                                <td id="rankTB6_2">12645</td>
+                                <td id="rankTB6_3">99</td>
+                            </tr>
+                            <tr onclick="Searchrank7(7)">
+                                <td>7</td>
+                                <td id="rankTB7_1" class="doubleline">Cheng Guan</td>
+                                <td id="rankTB7_2">13131</td>
+                                <td id="rankTB7_3">99</td>
+                            </tr>
+                            <tr onclick="Searchrank(8)">
+                                <td>8</td>
+                                <td id="rankTB8_1" class="doubleline">Huang Yuhuanxian,Cheng Wen</td>
+                                <td id="rankTB8_2">52037</td>
+                                <td id="rankTB8_3">98</td>
+                            </tr>
+                            <tr onclick="Searchrank(9)">
+                                <td>9</td>
+                                <td id="rankTB9_1" class="doubleline">Huang Longdadao</td>
+                                <td id="rankTB9_2">45042</td>
+                                <td id="rankTB9_3">98</td>
+                            </tr>
+                            <tr onclick="Searchrank(10)">
+                                <td>10</td>
+                                <td id="rankTB10_1" class="doubleline">Qiong Ming,Wen Jiachang</td>
+                                <td id="rankTB10_2">57026</td>
+                                <td id="rankTB10_3">98</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="sideBarLink">
+            <div id="mlink"></div>
+            <div class="mlinkDiv">
+                <div class="MLD1"></div>
+                <div class="MLD2"></div>
+            </div>
+        </div>
+        <div id="mbox" class="lbnav" style="display: none">
+            <div class="MBDiv">
+                <div class="MBD1"></div>
+                <div class="MBD2"></div>
+                <div class="MBD3"></div>
+                <div class="MBD4"></div>
+                <div class="MBD5"></div>
+                <div class="MBD6"></div>
+            </div>
+            <img class="MLcloseBtn" src="picture/close.png" />
+            <div class="MBTable">
+                <table>
+                    <tr>
+                        <th>Length</th>
+                        <th>Ranking</th>
+                        <th>Speed</th>
+                    </tr>
+                    <tr>
+                        <td id='attributeTB_1'>-----</td>
+                        <td id='attributeTB_2'>----</td>
+                        <td id='attributeTB_3'>----</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="note">
+                <div class="noteDiv">
+                    <p id='attributeTB_name'>----------</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="map" class="map-container"></div>
+        <div id="query" class="qrbox" style="display: none;">
+            <img class="QRcloseBtn" src="picture/Close.png" />
+            <form class="form1">
+                <input class="searchLoad_Time" type="text" readonly="readonly" style="position: absolute; height:20px;width: 80px; left:20px ;top:125px;" placeholder="选择日期" />
+                <select class="selectLoad_Time" style="position: absolute; height:27px;width: 90px; left:110px ;top:106px;">
+                    <option value="1">1:00</option>
+                    <option value="2">2:00</option>
+                    <option value="3">3:00</option>
+                    <option value="4">4:00</option>
+                    <option value="5">5:00</option>
+                    <option value="6">6:00</option>
+                    <option value="7">7:00</option>
+                    <option value="8">8:00</option>
+                    <option value="9">9:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                    <option value="13">13:00</option>
+                    <option value="14">14:00</option>
+                    <option value="15">15:00</option>
+                    <option value="16">16:00</option>
+                    <option value="17">17:00</option>
+                    <option value="18">18:00</option>
+                    <option value="19">19:00</option>
+                    <option value="20">20:00</option>
+                    <option value="21">21:00</option>
+                    <option value="22">22:00</option>
+                    <option value="23">23:00</option>
+                    <option value="24">24:00</option>
+                </select> </form>
+            <form class="form2">
+
+                <select class="searchLoadByClass" name="name2">
+                  
+                    <option value="LoadID">Road ID</option>
+                    <option Value="LoadRank">Road Ranking</option>
+				</select>
+            </form>
+            <form class="form3">
+                <select id="loadFeildSelet" name="name3">
+				</select>
+                <input class="inputText" id="loadFeildText" type="text" style="height:20px" name="" />
+            </form>
+            <button class="qrBtn" style="position: absolute; left:10px;" id="seachload_bySel_bnt1" type="button" value="">Query</button>
+            <button class="qrBtn" style="position: absolute; left:110px;" id="seachload_byText_bnt1" type="button" value="">Query</button>
+            <div class="QRDiv1"></div>
+            <div class="QRDiv2"></div>
+            <div class="QRDiv3"></div>
+            <div class="QRDiv4"></div>
+            <div class="QRDiv5"></div>
+            <div class="QRDiv6"></div>
+            <div class="QRDiv7"></div>
+            <div class="QRDiv8"></div>
+
+        </div>
+        <div class="qucik">
+            <div class="openQuickList">
+                <div class="OPLDiv">
+                    <div class="OPLD1"></div>
+                    <div class="OPLD2"></div>
+                    <div class="OPLD3"></div>
+                    <div class="OPLD4"></div>
+                    <div class="OPLD5"></div>
+                    <div class="OPLD6"></div>
+                    <div class="OPLD7"></div>
+                    <div class="OPLD8"></div>
+                </div>
+                <span class="openQuick"></span>
+            </div>
+            <div class="quickList" style="display: none">
+                <div class="QLDiv">
+                    <div class="QLD1"></div>
+                    <div class="QLD2"></div>
+                    <div class="QLD3"></div>
+                    <div class="QLD4"></div>
+                    <div class="QLD5"></div>
+                    <div class="QLD6"></div>
+                    <div class="QLD7"></div>
+                    <div class="QLD8"></div>
+                </div>
+                <ul class="quickListNavi">
+                    <li class="rb">Speed Rank</li>
+                    <li class="qb">Query</li>
+                    <li class="" onClick="javascript:location.href='3D_View.html';">3DView</li>
+                </ul>
+            </div>
+        </div>
+        <div id="colorSymbol" class="cSymbol" style="display: none;">
+            <div class="CSDiv">
+                <div class="CSD1"></div>
+                <div class="CSD2"></div>
+                <div class="CSD3"></div>
+                <div class="CSD4"></div>
+                <div class="CSD5"></div>
+                <div class="CSD6"></div>
+                <div class="CSD7"></div>
+                <div class="CSD8"></div>
+            </div>
+            <div class="CSMainD">
+                <img class="CScloseBtn" src="picture/close.png" />
+                <div class="CStitle1">Color</div>
+                <div class="CStitle2">Value</div>
+                <div class="CS1">
+                    <div class="CScolor" style="background-color:rgb(242,241,162);"></div>
+                    <div class="CStext" style="color: white;">13.47172481-26.61038039</div>
+                </div>
+                <div class="CS2">
+                    <div class="CScolor" style="background-color: rgb(252,250,88);"></div>
+                    <div class="CStext" style="color: white;">26.6103840-31.93686238</div>
+                </div>
+                <div class="CS3">
+                    <div class="CScolor" style="background-color: rgb(255,225,0);"></div>
+                    <div class="CStext" style="color: white;">31.93686239-37.26334437</div>
+                </div>
+                <div class="CS4">
+                    <div class="CScolor" style="background-color: rgb(255,98,0);"></div>
+                    <div class="CStext" style="color: white;">37.26334438-44.72041916</div>
+                </div>
+                <div class="CS5">
+                    <div class="CScolor" style="background-color: rgb(206,7,237);"></div>
+                    <div class="CStext" style="color: white;">44.72041917-63.54065553</div>
+                </div>
+                <div class="CS6">
+                    <div class="CScolor" style="background-color: rgb(111,25,209);"></div>
+                    <div class="CStext" style="color: white;">63.54065554-81.2955955</div>
+                </div>
+                <div class="CS7">
+                    <div class="CScolor" style="background-color:  rgb(7,29,173);"></div>
+                    <div class="CStext" style="color: white;">81.29559551-95.14444868</div>
+                </div>
+                <div class="CS8">
+                    <div class="CScolor" style="background-color: #ff0008;"></div>
+                    <div class="CStext" style="color: white;">95.14444869-104.0219187</div>
+                </div>
+                <hr style="position: absolute;top: 300px;left: 5px; width: 290px;color: white;" />
+                <div class="CStitle3">Color</div>
+                <div class="CStitle4">Value</div>
+                <div class="catchCS">
+                    <div id="over_feature_color" class="CScolor" style="background-color:white;"></div>
+                    <div id="over_feature_text" class="CStext" style="color: white;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="BtimeLine" style="display: none;">
+            <input type="text" readonly="readonly" class="text" id="Chose_CurrentTime" />
+            <select id='timeBarHourChoose'>
+                <option>1:00</option>
+                <option>2:00</option>
+                <option>3:00</option>
+                <option>4:00</option>
+                <option>5:00</option>
+                <option>6:00</option>
+                <option>7:00</option>
+                <option>8:00</option>
+                <option>9:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>   
+                <option>19:00</option>    
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+                <option>23:00</option>
+                <option>24:00</option>
+            </select>
+            <div class="BTLDiv1">
+                <div class="BTLDiv1_1"></div>
+                <div class="BTLDiv1_2"></div>
+                <div class="BTLDiv1_3"></div>
+                <div class="BTLDiv1_4"></div>
+                <div class="BTLDiv1_5"></div>
+                <div class="BTLDiv1_6"></div>
+                <div class="BTLDiv1_7"></div>
+                <div class="BTLDiv1_8"></div>
+            </div>
+            <div class="BTLDiv2">
+                <div class="playAndStopDiv">
+                    <div class="playAndStop" title="开始"></div>
+                </div>
+                <div class="timeLineTitleDiv">
+                    <div type='text' readonly="readonly" class='text' id="timeLineTitle1">Animation</div>
+                </div>
+                <div class="timeLineSelectDiv">
+                    <select id="timeUnit_sel" class="selectContain" name="layers">
+                        <option value="day" >1 Day</option>
+                        <option value="hours" selected = "selected">1 Hour</option>
+                    </select>
+                </div>
+                <div class="mainLine">
+                    <div class="timeResetDiv" title="Reset">
+                        <div class="timeReset"></div>
+                    </div>
+                    <div class="toLeft" id="toLeft" title="Forward">
+                        <div class="toLeftDiv1"></div>
+                        <div class="toLeftDiv2"></div>
+                        <div class="toLeftDiv3"></div>
+                    </div>
+                    <div class="toRight" title="Backward">
+                        <div class="toRightDiv1"></div>
+                        <div class="toRightDiv2"></div>
+                        <div class="toRightDiv3"></div>
+                    </div>
+                    <div class="mainLineAndPoint">
+
+                        <div class="mainLineHidden">
+                            <div class="mainTimeLine">
+                            </div>
+                            <div class="mainTimePoint">
+                                <div class="TP1"></div>
+                                <div class="TP2"></div>
+                                <div class="TP3"></div>
+                                <div class="TP4"></div>
+                                <div class="TP5"></div>
+                                <div class="TP6"></div>
+                                <div class="TP7"></div>
+                                <div class="TP8"></div>
+                                <div class="TP9"></div>
+                                <div class="TP10"></div>
+                                <div class="TP11"></div>
+                                <div class="TP12"></div>
+                                <div class="TP13"></div>
+                                <div class="TP14"></div>
+                                <div class="TP15"></div>
+                                <div class="TP16"></div>
+                                <div class="TP17"></div>
+                                <div class="TP18"></div>
+                                <div class="TP19"></div>
+                            </div>
+                            <div class="mainTimeText">
+                                <div class="TT1">-</div>
+                                <div class="TT2">-</div>
+                                <div class="TT3">-</div>
+                                <div class="TT4">-</div>
+                                <div class="TT5">-</div>
+                                <div class="TT6">-</div>
+                                <div class="TT7">-</div>
+                                <div class="TT8">-</div>
+                                <div class="TT9">-</div>
+                                <div class="TT10">1:00</div>
+                                <div class="TT11">-</div>
+                                <div class="TT12">-</div>
+                                <div class="TT13">-</div>
+                                <div class="TT14">-</div>
+                                <div class="TT15">-</div>
+                                <div class="TT16">-</div>
+                                <div class="TT17">-</div>
+                                <div class="TT18">-</div>
+                                <div class="TT19">-</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="stateContral" style="display: none;">
+        <div class="SCDiv1">
+            <div class="SCDiv1_1"></div>
+        </div>
+        <div class="SCDiv2">
+            <div class="SCTitle">StateController</div>
+        </div>
+        <div class="SCDiv3">
+            <div class="SCLayer">
+                <div class="SCLTitle">Time bar</div>
+
+                <div class="SCLSelects">
+                    <input type="text" class='SCLTextRaster' readonly="readonly" value="roadLine">
+                    <input type="text" class='SCLTextVector' readonly="readonly" value="roadGrid">
+                    <select class="SCLSelectRaster">
+                  
+                    <option value="open" selected="selected">Open</option>
+                    <option value="close">Close</option>
+                </select>
+                    <select class="SCLSelectVecter">
+                    
+                    <option value="open" selected="selected">Open</option>
+                    <option value="close">Close</option>
+                </select>
+                </div>
+            </div>
+            <div class="SCTime">
+                <div class="SCTTitle">Time bar</div>
+                <div class="SCTSelects">
+                    <input type="text" class="SCInput" placeholder="Time" />
+                    <select class="SCTSelect1">
+                    <option value="" selected="selected">1:00</option>
+                    <option value="">2:00</option>
+                    <option value="">3:00</option>
+                    <option value="">4:00</option>
+                    <option value="">5:00</option>
+                    <option value="">6:00</option>
+                    <option value="">7:00</option>
+                    <option value="">8:00</option>
+                    <option value="">9:00</option>
+                    <option value="">10:00</option>
+                    <option value="">11:00</option>
+                    <option value="">12:00</option>
+                    <option value="">13:00</option>
+                    <option value="">14:00</option>
+                    <option value="">15:00</option>
+                    <option value="">16:00</option>
+                    <option value="">17:00</option>
+                    <option value="">18:00</option>
+                    <option value="">19:00</option>
+                    <option value="">21:00</option>
+                    <option value="">22:00</option>
+                    <option value="">23:00</option>
+                    <option value="">24:00</option>
+                </select>
+                </div>
+            </div>
+        </div>
+        <div class="SCDiv4">
+            <button class="SCBtn1" type="button" value="">OK</button>
+            <div class="SCResetDiv">
+                <div class="SCReset"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="switchTime" style="display: none;">
+        <div class="STDiv1">
+            <div class="STD1_1"></div>
+            <div class="STD1_2"></div>
+            <div class="STD1_3"></div>
+            <div class="STD1_4"></div>
+            <div class="STD1_5"></div>
+            <div class="STD1_6"></div>
+        </div>
+        <button class="SCBtn3" type="button" value="">Creat a point</button>
+        <button class="SCBtn4" type="button" value="">Create a line chart</button>
+        <div class="STDiv2">
+            <div class="STD2_1">
+                <div class="STBtn1">1 day</div>
+                <div class="STBtn2">1 Hour</div>
+
+            </div>
+            <div id="echartbox1" style="border:2px solid rgb(55, 198, 214);background-color: #1eabe3;; position:absolute;height:360px;width:600px;left:8px;top:42px;z-index:12"></div>
+            <div class="STD2_2" style="display: none;">
+                <div class="STDTimeBar">
+                    <div class="DTBLine"></div>
+                    <div class="DTBPoint">
+                        <div class="DTBP1"></div>
+                        <div class="DTBP2"></div>
+                        <div class="DTBP3"></div>
+                        <div class="DTBP4"></div>
+                        <div class="DTBP5"></div>
+                        <div class="DTBP6"></div>
+                        <div class="DTBP7"></div>
+                        <div class="DTBP8"></div>
+                        <div class="DTBP9"></div>
+                        <div class="DTBP10"></div>
+                        <div class="DTBP11"></div>
+                        <div class="DTBP12"></div>
+                        <div class="DTBP13"></div>
+                        <div class="DTBP14"></div>
+                        <div class="DTBP15"></div>
+                        <div class="DTBP16"></div>
+                        <div class="DTBP17"></div>
+                        <div class="DTBP18"></div>
+                        <div class="DTBP19"></div>
+                        <div class="DTBP20"></div>
+                        <div class="DTBP21"></div>
+                        <div class="DTBP22"></div>
+                        <div class="DTBP23"></div>
+                        <div class="DTBP24"></div>
+                    </div>
+                    <div class="DTBText">
+                        <div class="DTBT1">1</div>
+                        <div class="DTBT2">2</div>
+                        <div class="DTBT3">3</div>
+                        <div class="DTBT4">4</div>
+                        <div class="DTBT5">5</div>
+                        <div class="DTBT6">6</div>
+                        <div class="DTBT7">7</div>
+                        <div class="DTBT8">8</div>
+                        <div class="DTBT9">9</div>
+                        <div class="DTBT10">10</div>
+                        <div class="DTBT11">11</div>
+                        <div class="DTBT12">12</div>
+                        <div class="DTBT13">13</div>
+                        <div class="DTBT14">14</div>
+                        <div class="DTBT15">15</div>
+                        <div class="DTBT16">16</div>
+                        <div class="DTBT17">17</div>
+                        <div class="DTBT18">18</div>
+                        <div class="DTBT19">19</div>
+                        <div class="DTBT20">20</div>
+                        <div class="DTBT21">21</div>
+                        <div class="DTBT22">22</div>
+                        <div class="DTBT23">23</div>
+                        <div class="DTBT24">24</div>
+                    </div>
+                </div>
+            </div>
+            <div class="STWeek">
+                <div class="STWTimeBar">
+                    <div class="WTBLine"></div>
+                    <div class="WTBPoint">
+                        <div class="WTBP1"></div>
+                        <div class="WTBP2"></div>
+                        <div class="WTBP3"></div>
+                        <div class="WTBP4"></div>
+                        <div class="WTBP5"></div>
+                        <div class="WTBP6"></div>
+                        <div class="WTBP7"></div>
+                    </div>
+                    <div class="WTBText">
+                        <div class="WTBT1">1</div>
+                        <div class="WTBT2">2</div>
+                        <div class="WTBT3">3</div>
+                        <div class="WTBT4">4</div>
+                        <div class="WTBT5">5</div>
+                        <div class="WTBT6">6</div>
+                        <div class="WTBT7">7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="timeStateContral" style="display: none;">
+        <div class="TSC1">
+            <div class="TSC1_1"></div>
+        </div>
+        <div class="TSC2">
+            <div class="TSCTitle1">State</div>
+        </div>
+        <div class="TSC3">
+            <div class="TSCTitle2">Timer Bar</div>
+            <div class="TSCSelects">
+                <input type="text" class="TSCInput" placeholder="Time" />
+                <select class="TSCSelect1">
+                    <option  value="defaultime" selected='selected'>Select a time</option>
+                    <option value="defaultime1">1:00</option>
+                    <option value="">2:00</option>
+                    <option value="">3:00</option>
+                    <option value="">4:00</option>
+                    <option value="">5:00</option>
+                    <option value="">6:00</option>
+                    <option value="">7:00</option>
+                    <option value="">8:00</option>
+                    <option value="">9:00</option>
+                    <option value="">10:00</option>
+                    <option value="">11:00</option>
+                    <option value="">12:00</option>
+                    <option value="">13:00</option>
+                    <option value="">14:00</option>
+                    <option value="">15:00</option>
+                    <option value="">16:00</option>
+                    <option value="">17:00</option>
+                    <option value="">18:00</option>
+                    <option value="">19:00</option>
+                    <option value="">21:00</option>
+                    <option value="">22:00</option>
+                    <option value="">23:00</option>
+                    <option value="">24:00</option>
+                </select>
+            </div>
+        </div>
+        <div class="TSC4">
+            <button class="TSCBtn1" type="button" value="">OK</button>
+            <div class="TSCResetDiv">
+                <div class="TSCReset"></div>
+            </div>
+        </div>
+    </div>
+    <div class="selectTimeAndWeight">
+        <div class="STAWDiv1">
+        </div>
+        <div class="STAWDiv2">
+            <div class="STAWTime">
+                <div class="STAWTime1">Time</div>
+                <div class="STAWTime2">
+                    <input type="text" class="STAWTime2_1" placeholder="Time" />
+                    <select class="STAWTime2_2">
+                        <option value="noSel" disabled selected hidden>Select a time</option>
+                        <option>1:00</option>
+                        <option>2:00</option>
+                        <option>3:00</option>
+                        <option>4:00</option>
+                        <option>5:00</option>
+                        <option>6:00</option>
+                        <option>7:00</option>
+                        <option>8:00</option>
+                        <option>9:00</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                        <option>21:00</option>
+                        <option>22:00</option>
+                        <option>23:00</option>
+                        <option>24:00</option>
+                    </select>
+                </div>
+            </div>
+            <div class="STAWWeight">
+                <div class="STAWWeight1">Weight</div>
+                <input type="text" class="STAWWeight2" placeholder="Please enter the weight value" />
+            </div>
+            <div class="STAWDivBtn">
+                <button class="STAWDivBtn1">Draw</button>
+                <button class="STAWDivBtn2">Cleat</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" exclude="iclient-classic" src="dist/classic/include-classic.js"></script>
+    <script type="text/javascript" src="js/echarts.js"></script>
+    <script type="text/javascript" exclude="iclient-classic" src="mapOptionJS/map_option.js" defer=true></script>
+    <script type="text/javascript" exclude="iclient-classic" src="mapOptionJS/jquery.ui.js"></script>
+</body>
+
+</html>

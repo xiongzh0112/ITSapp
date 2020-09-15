@@ -1,0 +1,26 @@
+/* #flower{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background:url(picture/hua2.png);
+    -webkit-animation: flower 15s linear infinite;
+    animation: flower 15s linear infinite;
+}
+@keyframes flower{
+   0%{
+       background-position: 0 0,0 0;
+   }
+   100%{
+       background-position:500px 1000px, 500px 500px; ;
+   }
+}
+@-webkit-keyframes flower{
+    0%{
+        background-position: 0 0,0 0;
+    }
+    100%{
+        background-position:500px 1000px, 500px 500px; ;
+    }
+ } */
